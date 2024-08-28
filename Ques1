@@ -1,0 +1,9 @@
+msg= "WEDNESDAY"
+count=0
+vowels=[]
+for x in msg:
+    if(x=='a' or x=='e' or x=='i'or x=='o' or x=='u'):
+        count+=1
+        vowels.append(x)
+print("Vowels: ",count)
+print(set(vowels))
