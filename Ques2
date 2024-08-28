@@ -1,0 +1,9 @@
+def adjust_string(msg,n):
+    msg = msg.replace(',','1').replace('.',',').replace('1','.')
+    
+    msg = msg[:n].lower()+msg[n:].upper()
+    return msg
+msg= "Yes,Real time monitoring,Immediate alerts."
+n=int(input("Enter the range"))
+fina_str = adjust_string(msg,n)
+print(fina_str)
